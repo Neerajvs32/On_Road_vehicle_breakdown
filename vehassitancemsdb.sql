@@ -68,6 +68,23 @@ CREATE TABLE `tblbook` (
   `UpdationDate` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+CREATE TABLE `tblbook` (
+  `ID` int(10) NOT NULL,
+  `BookingNumber` int(10) DEFAULT NULL,
+  `Name` varchar(200) DEFAULT NULL,
+  `Email` varchar(200) DEFAULT NULL,
+  `PhoneNumber` bigint(10) DEFAULT NULL,
+  `PickupLoc` varchar(200) DEFAULT NULL,
+  `Destination` varchar(200) DEFAULT NULL,
+  `PickupDate` varchar(200) DEFAULT NULL,
+  `PickupTime` varchar(200) DEFAULT NULL,
+  `DateofRequest` timestamp NOT NULL DEFAULT current_timestamp(),
+  `Remark` varchar(200) DEFAULT NULL,
+  `Status` varchar(200) DEFAULT NULL,
+  `AssignTo` varchar(200) DEFAULT NULL,
+  `UpdationDate` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 --
 -- Dumping data for table `tblbook`
 --
